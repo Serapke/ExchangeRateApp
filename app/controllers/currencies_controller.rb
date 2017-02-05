@@ -17,7 +17,7 @@ class CurrenciesController < ApplicationController
     @to = params[:to]
 
     if !@date.nil? && !@from.nil? && !@to.nil?
-      @answer = ExchangeRate::Rate.instance.at(@date, @from, @to).round(RATE_ROUND_PRECISION) * @amount.to_f
+      @answer = (ExchangeRate::Rate.instance.at(@date, @from, @to) * @amount.to_f).round(RATE_ROUND_PRECISION)
     end
     respond_to do |format|
       format.html { render :index }
