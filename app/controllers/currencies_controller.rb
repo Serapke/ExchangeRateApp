@@ -19,7 +19,10 @@ class CurrenciesController < ApplicationController
     if !@date.nil? && !@from.nil? && !@to.nil?
       @answer = ExchangeRate::Rate.instance.at(@date, @from, @to).round(RATE_ROUND_PRECISION) * @amount.to_f
     end
-    render :index
+    respond_to do |format|
+      format.html { render :index }
+      format.js
+    end
   end
 
   # Fetches xml data from source and updates the database if needed

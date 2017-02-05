@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <%= form_tag(root_path('date[date]': :date, amount: :amount, from: :from, to: :to), method: :get) do %>
+    <%= form_tag(root_path, remote: true, method: :get) do %>
       <div class="form-group">
         <label>Date</label>
         <%= date_field :date, :date, value: @date || Date.today, class: 'form-control' %>
@@ -33,11 +33,11 @@
   </div>
 </div>
 
-<div class="row" id="answer">
+<div class="row" id="answer-container">
   <div class="col-md-12">
     <div class="card">
       <h4 class="card-header">Answer</h4>
-      <div class="card-block">
+      <div id="answer" class="card-block">
         <% if @answer %>
             <p class="card-text text-center"><%= @answer %></p>
         <% else %>
