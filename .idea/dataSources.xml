@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails ForeignExchange: test" uuid="0a51d0b3-e7eb-4ff5-8600-3c94a8184179">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:ForeignExchange_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails ForeignExchange: development" uuid="5ece6f2e-fe9b-4ef6-aa36-63eaa98cc355">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:ForeignExchange_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails ForeignExchange: production" uuid="ca4e19f8-3b78-4ebe-a67a-8a4fa5e9f0f8">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:ForeignExchange_production</jdbc-url>
+    </data-source>
+  </component>
+</project>
